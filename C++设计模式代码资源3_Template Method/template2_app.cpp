@@ -1,12 +1,12 @@
-//Ó¦ÓÃ³ÌĞò¿ª·¢ÈËÔ±
+//åº”ç”¨ç¨‹åºå¼€å‘äººå‘˜
 class Application : public Library {
 protected:
 	virtual bool Step2(){
-		//... ×ÓÀàÖØĞ´ÊµÏÖ
+		//... å­ç±»é‡å†™å®ç°
     }
 
     virtual void Step4() {
-		//... ×ÓÀàÖØĞ´ÊµÏÖ
+		//... å­ç±»é‡å†™å®ç°
     }
 };
 
