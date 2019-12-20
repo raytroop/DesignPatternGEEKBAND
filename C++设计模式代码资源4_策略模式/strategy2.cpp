@@ -29,7 +29,7 @@ public:
 
 
 
-//À©Õ¹
+//æ‰©å±•
 //*********************************
 class FRTax : public TaxStrategy{
 public:
@@ -54,12 +54,12 @@ public:
     public double CalculateTax(){
         //...
         Context context();
-        
-        double val = 
-            strategy->Calculate(context); //¶àÌ¬µ÷ÓÃ
+
+        double val =
+            strategy->Calculate(context); //å¤šæ€è°ƒç”¨
         //...
     }
-    
+
 };
 
 

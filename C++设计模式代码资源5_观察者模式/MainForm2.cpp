@@ -15,8 +15,8 @@ public:
 
 		FileSplitter splitter(filePath, number);
 
-		splitter.addIProgress(this); //¶©ÔÄÍ¨Öª
-		splitter.addIProgress(&cn)£» //¶©ÔÄÍ¨Öª
+		splitter.addIProgress(this); //è®¢é˜…é€šçŸ¥
+		splitter.addIProgress(&cn)ï¼› //è®¢é˜…é€šçŸ¥
 
 		splitter.split();
 

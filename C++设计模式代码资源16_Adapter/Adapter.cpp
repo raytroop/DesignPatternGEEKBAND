@@ -14,56 +14,59 @@ public:
 //遗留类型
 class OldClass: public IAdaptee{
     //....
+    virtual void foo(int data) {}
+    virtual int bar() {}
 };
 
 //对象适配器
 class Adapter: public ITarget{ //继承
 protected:
     IAdaptee* pAdaptee;//组合
-    
+
 public:
-    
+
     Adapter(IAdaptee* pAdaptee){
         this->pAdaptee=pAdaptee;
     }
-    
-    virtual void process(){
+
+    virtual void process() override {
         int data=pAdaptee->bar();
         pAdaptee->foo(data);
-        
+
     }
-    
-    
+
+
 };
 
 
 //类适配器
-class Adapter: public ITarget,
-               protected OldClass{ //多继承
-               
-               
-}
+// class Adapter: public ITarget,
+//                protected OldClass{ //多继承
+
+
+// }
 
 
 int main(){
     IAdaptee* pAdaptee=new OldClass();
-    
-    
+
+
     ITarget* pTarget=new Adapter(pAdaptee);
     pTarget->process();
-    
-    
+
+
 }
 
 
+/* STL中， stack和queue的实现使用了Adapter适配器 */
 class stack{
     deqeue container;
-    
+
 };
 
 class queue{
     deqeue container;
-    
+
 };
 
 
